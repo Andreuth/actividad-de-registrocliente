@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes</title>
+    <link rel="stylesheet"  href="styles.css">
+</head>
+<body>
+    <div class ="container">
+        <h1>Registro de clientes</h1>
+        <form action="/submit" method="post">
+            <div class="from-group">
+                <label for="cedula">Cédula:</label>
+                <input type="text" id="cedula" name="cedula" required>
+            </div>
+            <div class="from-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+            <div class="from-group">
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombres" name="nombres" required>
+            </div>
+            <div class="from-group">
+                <label for="direccion">Direccion:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div class="from-group">
+                <label for="correo">Correo electronico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="from-group">
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ciudad">Ciudad:</label>
+                <select id="ciudad" name="ciudad" required>
+                    <option value="">Seleccione una ciudad</option>
+                    <option value="Ciudad1">Manta</option>
+                    <option value="Ciudad2">Guayaquil</option>
+                    <option value="Ciudad3">Otros</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Registrar">
+
+        </form>
+    </div>
+</body>
+</html>
